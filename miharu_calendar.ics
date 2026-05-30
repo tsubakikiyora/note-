@@ -1,0 +1,144 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//miharu_aisales//SNS Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:みはる SNS・note スケジュール
+X-WR-TIMEZONE:Asia/Tokyo
+
+BEGIN:VEVENT
+UID:morning-sns-001@miharu
+DTSTART;TZID=Asia/Tokyo:20260530T070000
+DTEND;TZID=Asia/Tokyo:20260530T073000
+RRULE:FREQ=DAILY;UNTIL=20260831T150000Z
+SUMMARY:📱 朝のSNS投稿（Threads＋X）
+DESCRIPTION:【Threads 朝7:00】と【X 朝7:30】を投稿する\nスプレッドシート「SNS投稿管理｜みはる_週次スケジュール【修正版】」を開いて本文をコピー→少し崩して投稿\n\n✅ Threads 朝投稿\n✅ X 朝投稿
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:朝のSNS投稿の時間です📱
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:noon-sns-001@miharu
+DTSTART;TZID=Asia/Tokyo:20260530T120000
+DTEND;TZID=Asia/Tokyo:20260530T121500
+RRULE:FREQ=DAILY;UNTIL=20260831T150000Z
+SUMMARY:📱 昼のSNS投稿（Threads）
+DESCRIPTION:【Threads 昼12:00】を投稿する\nスプレッドシート「SNS投稿管理｜みはる_週次スケジュール【修正版】」を開いて本文をコピー→少し崩して投稿\n\n✅ Threads 昼投稿
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:昼のSNS投稿の時間です📱
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:evening-sns-001@miharu
+DTSTART;TZID=Asia/Tokyo:20260530T210000
+DTEND;TZID=Asia/Tokyo:20260530T214500
+RRULE:FREQ=DAILY;UNTIL=20260831T150000Z
+SUMMARY:📱 夜のSNS投稿（Threads＋X）＋note誘導
+DESCRIPTION:【Threads 夜21:00】と【X 夜21:30】を投稿する\nスプレッドシート「SNS投稿管理｜みはる_週次スケジュール【修正版】」を開いて本文をコピー→少し崩して投稿\n夜はnoteへのリンク付き投稿が多いので忘れずに\n\n✅ Threads 夜投稿（noteリンクあり）\n✅ X 夜投稿（noteリンクあり）
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:夜のSNS投稿の時間です📱
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:comment-activity-001@miharu
+DTSTART;TZID=Asia/Tokyo:20260530T220000
+DTEND;TZID=Asia/Tokyo:20260530T221500
+RRULE:FREQ=DAILY;UNTIL=20260831T150000Z
+SUMMARY:💬 コメント活動（5件）
+DESCRIPTION:Threads・Xで同ジャンルのアカウントに5件コメントする\n\n検索キーワード例：\n・エステ 開業\n・個人サロン 集客\n・サロン経営\n・エステティシャン\n\n✅ Threads コメント3件\n✅ X リプライ2件
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:コメント活動5件やりましょう💬
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:weekly-review-001@miharu
+DTSTART;TZID=Asia/Tokyo:20260531T200000
+DTEND;TZID=Asia/Tokyo:20260531T203000
+RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20260831T150000Z
+SUMMARY:📊 週次振り返り＋Claude Codeに来週分を依頼
+DESCRIPTION:今週の数字をメモしてClaudeに報告する\n\n確認すること：\n・Xフォロワー数（増減）\n・Threadsフォロワー数（増減）\n・noteビュー数\n・いいねが多かった投稿\n・コメントがついた投稿\n\nその後→ Claude Codeを開いて来週分の投稿案をスプレッドシートに追記してもらう
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:週次振り返りの時間です📊 数字を確認してClaudeに報告しましょう
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:note-article8@miharu
+DTSTART;TZID=Asia/Tokyo:20260605T080000
+DTEND;TZID=Asia/Tokyo:20260605T083000
+SUMMARY:📝 note記事8 公開「月商100万までのリアルな道のり」
+DESCRIPTION:【無料記事】月商100万までのリアルな道のり——数字で振り返る私のストーリー\n\n公開前チェック：\n✅ 本文の最終確認\n✅ アイキャッチ画像の設定\n✅ 朝8:00に公開設定\n✅ 公開後すぐにThreads・Xで告知投稿（スプレッドシートの6/5分を使う）
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:今日はnote記事8の公開日です📝 朝8時に公開しましょう
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:note-article9@miharu
+DTSTART;TZID=Asia/Tokyo:20260612T080000
+DTEND;TZID=Asia/Tokyo:20260612T083000
+SUMMARY:📝 note記事9 公開「なぜ有料にするのか」
+DESCRIPTION:【無料・橋渡し記事】「実践編」を始めます——なぜ有料にするのか、正直にお話しします\n\n公開前チェック：\n✅ 本文の最終確認\n✅ 有料記事のラインナップを記載しているか確認\n✅ 朝8:00に公開設定\n✅ 公開後すぐにThreads・Xで告知投稿
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:今日はnote記事9（有料化宣言）の公開日です📝
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:note-paid1@miharu
+DTSTART;TZID=Asia/Tokyo:20260626T080000
+DTEND;TZID=Asia/Tokyo:20260626T083000
+SUMMARY:💰 note有料記事① 公開「エステティシャンの仕事とは」1,980円
+DESCRIPTION:【有料記事①・1,980円】エステティシャンの仕事とは——何を目指すべきかを見失っていませんか\n\n公開前チェック：\n✅ 本文の最終確認\n✅ 価格設定（1,980円）の確認\n✅ 無料公開部分（リード文）が魅力的か確認\n✅ 朝8:00に公開設定\n✅ 公開後すぐにThreads・Xで告知投稿\n\n🎉 初めての有料記事！
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:今日は初めての有料記事の公開日です💰 おめでとうございます！
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:note-article9-prep@miharu
+DTSTART;TZID=Asia/Tokyo:20260607T100000
+DTEND;TZID=Asia/Tokyo:20260607T110000
+SUMMARY:✍️ 記事9の原稿を仕上げる（締切：6/11）
+DESCRIPTION:「実践編を始めます——なぜ有料にするのか」の原稿作業\n公開は6/12（金）なので、6/11（木）までに完成させる\n\nポイント：\n・有料化を「セールスは愛」と一貫させて書く\n・有料記事のラインナップを紹介する\n・読者への誠実さを前面に出す
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:記事9の原稿、進んでいますか？✍️
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:paid1-prep@miharu
+DTSTART;TZID=Asia/Tokyo:20260614T100000
+DTEND;TZID=Asia/Tokyo:20260614T110000
+SUMMARY:✍️ 有料記事①の原稿を仕上げる（締切：6/24）
+DESCRIPTION:「エステティシャンの仕事とは——何を目指すべきか」の原稿作業\n公開は6/26（木）なので、6/24（火）までに完成させる\n\n価格：1,980円\n\nポイント：\n・無料部分（リード）で続きを読みたくなる設計\n・具体的な場面描写を入れる\n・師匠のエピソードと連動させる
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:有料記事①の原稿、進んでいますか？✍️
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR
